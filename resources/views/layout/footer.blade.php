@@ -32,7 +32,8 @@
                     <h6 class="title">Be the first to hear about new sellers, products, and business opportunities.
                     </h6>
                     <div class="subscription-box">
-                        <form id="subscribe-form" action="" method="post">
+                        <form id="subscribe-form" action="{{ route('subscribe') }}" method="post">
+                            @csrf
                             <div class="input-group">
                                 <input type="email" name="email" placeholder="youremail@gmail.com" class="flex-grow-1" require />
                                 <span class="input-group-text bg-transparent border-0 py-0">
@@ -123,7 +124,7 @@
                 </button>
 
                 <div class="content">
-                    <form action="{{ route('subscribe') }}" method="post">
+                    <form action="{{ route('shopping') }}" method="post">
                         @csrf
                         <input type="hidden" name="latitude" value=" {{$location['latitude'] ?? null}}" />
                         <input type="hidden" name="longitude" value=" {{$location['longitude'] ?? null}}" />
