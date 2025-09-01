@@ -1,0 +1,287 @@
+.order-tracking-main-cos .order-tracking-main-top {
+    padding-block: 10px;
+}
+
+.order-tracking-main-cos .offcanvas-header .border-bottom {
+    border-bottom-color: #E5DFED !important;
+}
+
+.order-tracking-main-cos .offcanvas-header .offcanvas-title {
+    color: #1F1724;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+.order-tracking-main-cos .map-box iframe,
+.order-tracking-main-cos .map-inable>div {
+    width: 100%;
+    height: 320px;
+}
+
+.order-tracking-main-cos .map-close-btn {
+    background: #fff;
+    border: 1px solid #00000026;
+    box-shadow: 0px 2.07px 17.57px 0px #00000026;
+    border-radius: 6px;
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    height: 30px;
+    width: 30px;
+}
+
+.order-tracking-main-cos .order-tracking-list {
+    gap: 10px;
+}
+
+.order-tracking-main-cos .order-tracking-list .tracking-step {
+    position: relative;
+}
+
+
+
+
+/* .order-tracking-main-cos .order-tracking-list .tracking-date {
+    top: 8px;
+    right: 8px;
+    padding: 5px 10px;
+    background: rgb(55 172 78 / 10%);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #37966F;
+    position: absolute;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 1.1;
+    letter-spacing: unset;
+    text-align: right;
+} */
+.order-tracking-main-cos .order-tracking-list .tracking-date {
+    top: 8px;
+    right: 8px;
+    padding: 5px 10px;
+    background: rgb(55 172 78 / 10%);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #6A6A6A;
+    position: absolute;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 1.1;
+    letter-spacing: unset;
+    text-align: right;
+    background: #0000000D;
+}
+
+.order-tracking-main-cos .order-tracking-list .tracking-status-icon {
+    width: 18px;
+    height: 18px;
+    bottom: 12px;
+    right: 10px;
+    display: block;
+    position: absolute;
+}
+
+.order-tracking-main-cos .order-tracking-list .tracking-status-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.order-tracking-main-cos .tracking-step {
+    border-radius: 14px;
+    padding: 12px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+/* .order-tracking-main-cos .tracking-step {
+    border: 1px solid #37AC4E;
+    border-radius: 14px;
+    padding: 12px;
+} */
+
+
+.order-tracking-main-cos .tracking-step h4 {
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 6px;
+    padding-right: 60px;
+}
+
+.order-tracking-main-cos .tracking-step p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.1;
+    color: #494949;
+}
+
+.order-tracking-main-cos .tracking-step-box {
+    gap: 12px;
+}
+
+.order-tracking-main-cos .tracking-step-box .check-icon {
+    display: none;
+}
+
+.order-tracking-main-cos .offcanvas-footer {
+    padding: 16px;
+    box-shadow: 0px -1px 48.7px 0px #00000026;
+}
+
+.order-tracking-main-cos .Close-btn-ft {
+    background: #37AA4C;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #37AA4C;
+}
+
+.order-tracking-main-cos .offcanvas-body::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 32px;
+}
+
+.order-tracking-main-cos .offcanvas-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.order-tracking-main-cos .offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: #9F9F9F;
+    border-radius: 32px;
+}
+
+.order-tracking-main-cos .tracking-step .icon-image {
+    border: 1px solid #0000000F;
+    background: #0000000F;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.order-tracking-main-cos .tracking-step:first-child .tracking-step-box::before {
+    height: 50% !important;
+    bottom: 0;
+    top: auto !important;
+}
+
+.order-tracking-main-cos .order-tracking-list .tracking-step.complete .tracking-step-box::before {
+    left: 29px;
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    border: 1px dashed rgb(55 172 78 / 50%);
+    position: absolute;
+    top: 0;
+}
+
+.order-tracking-main-cos .tracking-step.complete {
+    background: #37966F1A;
+    border: 1px solid #37966F1A;
+}
+
+.order-tracking-main-cos .tracking-step.complete .tracking-date {
+    background: #37AC4E1A !important;
+    color: #37966F !important;
+}
+
+.order-tracking-main-cos .tracking-step.complete .check-icon {
+    display: block;
+}
+
+.order-tracking-main-cos .tracking-step.complete .uncheck-icon {
+    display: none;
+}
+
+.order-tracking-main-cos .tracking-step.complete .tracking-status-icon {
+    bottom: 6px;
+}
+
+.order-tracking-main-cos .tracking-step.complete .icon-image {
+    background: #fff;
+    border: 1px solid #37966F33
+}
+
+.order-tracking-main-cos .tracking-step.complete .icon-image svg path {
+    fill: #10A12C;
+}
+
+.order-tracking-main-cos .tracking-step-details ul {
+    gap: 15px;
+}
+
+.order-tracking-main-cos .tracking-step-details ul li p {
+    margin-bottom: 0px;
+}
+
+.order-tracking-main-cos .tracking-step-details ul li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #494949;
+    display: block;
+    margin-right: 12px;
+    border-radius: 50px;
+}
+
+.order-tracking-main-cos .tracking-step .tracking-step-details {
+    display: none;
+    background: #EBF5F1;
+    padding: 15px 18px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.order-tracking-main-cos .tracking-step .tracking-step-details .order-tracking-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #494949;
+    margin-bottom: 2px;
+}
+
+.order-tracking-main-cos .tracking-step .tracking-step-details .order-tracking-date {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.2;
+    letter-spacing: 0%;
+    color: #667085;
+}
+
+.order-tracking-main-cos .tracking-step.inprogress .tracking-step-details {
+    display: block;
+}
+
+.order-tracking-main-cos .tracking-step.inprogress {
+    background: #ffffff;
+    border: 1px solid #37AC4E;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .order-tracking-main-cos {
+        width: 100% !important;
+    }
+}

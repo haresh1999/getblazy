@@ -1,0 +1,232 @@
+.auth-block {
+  background: url("/customer/assets/images/auth.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+
+.auth-block .details-box {
+  background: #fff;
+  max-width: 565px;
+  width: 100%;
+  margin-left: auto;
+  padding: 64px 44px 55px;
+  border-radius: 40px;
+  min-width: 518px;
+}
+
+
+.logo-img {
+  display: inline-block;
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 25px;
+}
+
+.social-btn {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-btn .btn {
+  border-radius: 9px;
+  outline: none;
+  padding: 12px 20px;
+}
+
+.social-btn .btn:focus {
+  box-shadow: none;
+}
+
+.social-btn .google-btn {
+  border: 0px solid var(--bs-theme-primary-300);
+  font-weight: 600;
+}
+
+.social-btn .google-btn img {
+  margin-right: 20px;
+}
+
+.form-group {
+  margin-bottom: 37px;
+}
+
+.form-group label {
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.form-group input,
+.form-group select {
+  border-radius: 9px;
+  padding: 18px 26px;
+  font-weight: 300;
+  outline: none;
+  border: 1px solid var(--bs-gray-1300);
+}
+
+.form-group input:placeholder,
+.form-group select:placeholder {
+  color: var(--bs-gray-1200);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border: 1px solid var(--bs-theme-primary-400);
+  box-shadow: none;
+}
+
+.form-group:last-child {
+  margin-bottom: 12px;
+}
+
+.sign-up .form-group {
+  margin-bottom: 18px;
+}
+
+.sign-up:last-child {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  border-radius: 10px;
+  background: var(--bs-theme-primary-400);
+  box-shadow: 0px 4.194px 19.923px 0px rgba(119, 147, 65, 0.3);
+  width: 247.466px;
+  height: 56.623px;
+  margin-bottom: 37px;
+}
+
+.submit-btn:focus {
+  box-shadow: 0px 4.194px 19.923px 0px rgba(119, 147, 65, 0.3);
+}
+
+.country-select-wrapper {
+  width: 130px !important;
+}
+
+.country-select-wrapper select {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ===================select 2=========================== */
+.select2-container--default {
+  max-width: 100%;
+}
+
+.select2-container .select2-selection--single {
+  height: calc(1.5em + 0.75rem + 25px) !important;
+  border-radius: 9px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: calc(1.5em + 0.75rem + 25px) !important;
+}
+
+.select2-container--default .select2-selection {
+  border-color: var(--bs-gray-1300) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 60px !important;
+}
+
+.select2-container .select2-selection--multiple {
+  min-height: 41px !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border-radius: 16px !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #1f1724 !important;
+  border: 1px solid #1f1724 !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #fff !important;
+  height: 100%;
+}
+
+.select2-dropdown {
+  width: 400px !important;
+}
+
+@media (max-width: 991.98px) {
+  .auth-block {
+    padding: 60px 30px;
+  }
+
+  .auth-block .details-box {
+    padding: 20px 20px 30px;
+    border-radius: 20px;
+    max-width: 100%;
+    min-width: 422px;
+  }
+
+  .social-btn {
+    flex-wrap: wrap;
+  }
+
+  .social-btn .btn {
+    padding: 8px 12px;
+  }
+
+  .social-btn .google-btn {
+    padding: 12px 12px;
+  }
+
+  .form-group {
+    font-size: 14px;
+  }
+
+  .form-group input {
+    padding: 14px 18px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .select2-container .select2-selection--single {
+    height: calc(1.5em + 0.75rem + 20px) !important;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: calc(1.5em + 0.75rem + 20px) !important;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 50px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .country-select-wrapper {
+    width: 100% !important;
+  }
+
+  .select2-container--default {
+    width: 100% !important;
+  }
+
+  .auth-block .details-box {
+    min-width: calc(100% - 20px);
+  }
+
+  .auth-block {
+    justify-content: center;
+  }
+
+}

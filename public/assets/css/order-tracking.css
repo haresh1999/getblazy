@@ -1,0 +1,1697 @@
+.order-tracking-list .tracking-step {
+    background: rgb(55 150 111 / 10%);
+    border-radius: 20px;
+    padding: 16px 21px 20px;
+    position: relative;
+}
+.order-tracking-list .tracking-step .tracking-step-box {
+    display: flex;
+    gap: 21px;
+}
+
+.order-tracking-list .tracking-step .icon-image {
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgb(55 150 111 / 20%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.order-tracking-list .tracking-step .icon-image img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.order-tracking-list .tracking-content h4 {
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.order-tracking-list .tracking-content p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #494949;
+    max-width: 37ch;
+}
+
+.order-tracking-list .tracking-date {
+    background: rgb(55 172 78 / 10%);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #37966F;
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    padding: 6px 17px;
+}
+
+.order-tracking-list .tracking-status-icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    right: 12px;
+}
+
+.order-tracking-list .tracking-status-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.order-tracking-list .tracking-step .tracking-step-box::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    border: 2px dashed rgb(55 172 78 / 50%);
+    position: absolute;
+    top: 0;
+    left: 46px;
+}
+
+.order-tracking-list .tracking-step:first-child .tracking-step-box::before {
+    height: 50%;
+    bottom: 0;
+    top: auto;
+}
+
+.order-tracking-list .tracking-step.tracking-current-step .tracking-step-box::before {
+    height: 20px;
+    bottom: auto;
+    top: 0;
+}
+
+.order-tracking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding-bottom: 66px;
+    max-height: 872px;
+    overflow: scroll;
+    padding-right: 12px;
+}
+
+.order-tracking-list::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 32px;
+}
+
+.order-tracking-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.order-tracking-list::-webkit-scrollbar-thumb {
+    background-color: #9F9F9F;
+    border-radius: 32px;
+}
+
+.driver-tracking-model .modal-content {
+    border: 1px solid #DDDDDD !important;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.driver-tracking-model .order-tracking-step {
+    padding: 21px 24px;
+    padding-right: 6px;
+    height: 100%;
+}
+
+.driver-tracking-model .order-tracking-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    color: #000000;
+}
+
+.tracking-step.tracking-current-step {
+    border: 1.5px solid #37AC4E;
+    background: transparent;
+    padding: 14px 17px 22px 20px;
+}
+
+.tracking-step.tracking-current-step .icon-image {
+    background: #EBF5F1;
+    border-color: #EBF5F1;
+}
+
+.tracking-step .call-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #12B76A;
+    border-radius: 14px;
+    border: 2px solid #12B76A;
+    transition: all .3s ease-in-out;
+}
+
+.tracking-step .call-icon:hover {
+    background: transparent;
+}
+
+.tracking-step .call-icon:hover svg path {
+    stroke: #12B76A;
+}
+
+.tracking-step .call-icon svg path,
+.tracking-step .sms-icon svg path {
+    transition: all .3s ease-in-out;
+}
+
+.tracking-step .call-icon svg,
+.tracking-step .sms-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.tracking-step .sms-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #12B76A;
+    border-radius: 14px;
+    transition: all .3s ease-in-out;
+}
+
+.tracking-step .sms-icon:hover {
+    background: #12B76A;
+}
+
+.tracking-step .sms-icon:hover svg path {
+    stroke: #ffffff;
+}
+
+.tracking-step .contact-btns {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.tracking-step .driver-info .driver-img {
+    width: 62px;
+    height: 62px;
+    border-radius: 14px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.tracking-step .driver-info .driver-name h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.tracking-step .ratings,
+.store-ratings-with-name .ratings {
+    display: flex;
+    gap: 6px;
+    align-items: end;
+}
+
+.tracking-step .ratings p,
+.store-ratings-with-name .ratings p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #667085;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.tracking-step .driver-info {
+    padding-top: 18px;
+    margin-block: 18px 20px;
+    border-top: 1px solid rgb(0 0 0 / 12%);
+}
+
+.bg-light-text {
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+
+.bg-light-text p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #667085;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.bg-light-text h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.order-info {
+    padding: 20px 30px;
+}
+
+.arrival-distance,
+.car-details {
+    border-left: 1px solid rgb(0 0 0 / 17%);
+}
+
+.bg-light-text.car-info {
+    padding: 8px 20px;
+}
+
+.car-details h6 {
+    margin-bottom: 12px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.driver-tracking-model .close-btn {
+    box-shadow: 0 -2px 37px rgb(0 0 0 / 23%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 26px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+}
+
+.driver-tracking-model .close-btn button {
+    width: 100%;
+    background: #37AA4C;
+    border: 1px solid #37AA4C;
+    border-radius: 10px;
+    padding: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+.driver-tracking-model .close-btn button:hover {
+    background: transparent;
+    color: #37AA4C;
+}
+
+.driver-tracking-model .modal-header .popup-close-btn {
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 34px rgb(0 0 0 / 15%);
+    position: absolute;
+    right: 21px;
+    top: 17px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tracking-step.customer-picked-up {
+    background: #F2F2F2;
+}
+
+.tracking-step.customer-picked-up .icon-image {
+    background: rgb(0 0 0 / 6%);
+    border-color: transparent;
+}
+
+.tracking-step.customer-picked-up .tracking-step-box::before {
+    display: none;
+}
+
+.tracking-step.customer-picked-up .tracking-step-box .tracking-date {
+    background: rgb(0 0 0 / 5%);
+    color: #6A6A6A;
+}
+
+.tracking-popup .order-full-info {
+    position: absolute;
+    bottom: 28px;
+    width: 100%;
+    padding-inline: 20px;
+}
+
+.tracking-popup .order-pickup-dates {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 34px rgb(0 0 0 / 15%);
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+.tracking-popup .order-date-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #667085;
+}
+
+.tracking-popup .order-main-date {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #1D2939;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.tracking-popup .order-date {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.tracking-popup .scheduled-date .icon svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.tracking-popup .scheduled-date p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #12B76A;
+}
+
+.tracking-popup .scheduled-date {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tracking-popup .about-store {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 21px 20px 25px 20px;
+    box-shadow: 0 13px 34px rgb(0 0 0 / 15%);
+    border: 1px solid rgb(0 0 0 / 10%);
+    flex: 1;
+}
+
+.store-and-otp .store-id h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    margin: 0;
+}
+
+.tracking-popup .pickup-type {
+    background: rgb(55 172 78 / 10%);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 4px 12px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #37966F;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tracking-popup .pickup-type .dot {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #37966F;
+    flex: 0 0 auto;
+}
+
+.tracking-popup .store-id {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.tracking-popup .store-name .store-logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 11px;
+    object-fit: cover;
+}
+
+.tracking-popup .store-ratings-with-name h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #494949;
+    margin-bottom: 10px;
+}
+
+.tracking-popup .qr-verify {
+    background: #ffffff;
+    padding: 26px 20px;
+    box-shadow: 0 13px 34px rgb(0 0 0 / 15%);
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 20px;
+}
+
+.tracking-popup .otp-container p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 26ch;
+    margin: 0 auto 26px;
+}
+
+.tracking-popup .otp-container h5 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #7B7B7B;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.tracking-popup .otp-numbers input {
+    background: rgb(55 150 111 / 14%);
+    border-radius: 3px;
+    color: #00B207;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    border: 0;
+    font-size: 17px;
+    line-height: 1.2;
+    padding: 4px 8px;
+    width: 26px;
+}
+
+.tracking-popup .otp-numbers input[type=number]::-webkit-outer-spin-button,
+.tracking-popup .otp-numbers input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.tracking-popup .otp-numbers {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+}
+
+.tracking-popup .qr-verify {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    flex: 1;
+}
+
+.tracking-popup .store-and-otp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.map-with-content iframe {
+    min-height: 700px;
+    height: 100%;
+}
+
+.tracking-popup .qr-img img {
+    width: 100%;
+    max-width: 134px;
+    object-fit: contain;
+}
+
+.tracking-popup .car-info img.img-fluid {
+    width: 100%;
+    max-width: 144px;
+    object-fit: contain;
+}
+
+
+
+@media screen and (min-width: 1400px) {
+    .driver-tracking-model .modal-dialog {
+        max-width: 1340px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .driver-tracking-model .modal-dialog {
+        max-width: 1484px;
+    }
+}
+
+
+@media screen and (max-width:1499px) {
+    .order-tracking-list .tracking-content h4 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .order-tracking-list .tracking-step .tracking-step-box {
+        gap: 14px;
+    }
+
+    .order-tracking-list .tracking-date {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    .order-tracking-list .tracking-content p,
+    .tracking-popup .order-date-title {
+        font-size: 12px;
+    }
+
+    .order-tracking-list .tracking-step .icon-image {
+        width: 46px;
+        height: 46px;
+    }
+
+    .order-tracking-list .tracking-step .icon-image img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .order-tracking-list .tracking-step .tracking-step-box::before {
+        border: 1.6px dashed rgb(55 172 78 / 50%);
+    }
+
+    .tracking-step .driver-info .driver-img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .tracking-step .driver-info .driver-name h5 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .star-icon svg {
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+
+    .tracking-step .ratings p,
+    .store-ratings-with-name .ratings p,
+    .bg-light-text h6,
+    .store-and-otp .store-id h4,
+    .tracking-popup .store-ratings-with-name h4 {
+        font-size: 15px;
+    }
+
+    .tracking-step .call-icon,
+    .tracking-step .sms-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .tracking-step .call-icon svg,
+    .tracking-step .sms-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .bg-light-text p {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .driver-tracking-model .order-tracking-title {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .order-tracking-list .tracking-step {
+        padding: 14px 18px 18px;
+    }
+
+    .order-tracking-list .tracking-status-icon {
+        width: 18px;
+        height: 18px;
+        bottom: 12px;
+        right: 10px;
+    }
+
+    .order-tracking-list {
+        max-height: 750px;
+    }
+
+    .driver-tracking-model .modal-header .popup-close-btn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .tracking-popup .scheduled-date p,
+    .tracking-popup .order-main-date {
+        font-size: 14px;
+    }
+
+    .tracking-popup .scheduled-date .icon svg {
+        width: 18px;
+        height: 18px;
+        display: block;
+    }
+
+    .tracking-popup .scheduled-date {
+        align-items: end;
+    }
+
+    .driver-tracking-model .close-btn {
+        padding: 12px 26px;
+    }
+
+    .driver-tracking-model .close-btn button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .order-tracking-list::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .driver-tracking-model .order-tracking-step {
+        padding: 20px 18px 0;
+        padding-right: 6px;
+    }
+
+    .tracking-popup .order-full-info {
+        position: absolute;
+        bottom: 16px;
+        width: 100%;
+        padding-inline: 20px;
+    }
+
+    .order-tracking-list .tracking-step .tracking-step-box::before {
+        left: 39px;
+    }
+
+    .tracking-popup .otp-numbers input {
+        font-size: 16px;
+        padding: 2px 2px;
+        width: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .driver-tracking-model .modal-dialog {
+        max-width: 980px;
+    }
+
+    .order-tracking-list .tracking-content h4 {
+        font-size: 16px;
+    }
+
+    .order-tracking-list .tracking-step .icon-image {
+        width: 38px;
+        height: 38px;
+    }
+
+    .order-tracking-list .tracking-step .icon-image img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .order-tracking-list .tracking-date {
+        font-size: 11px;
+        top: 8px;
+        right: 8px;
+    }
+
+    .driver-tracking-model .order-tracking-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .tracking-step .driver-info .driver-img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .tracking-step .driver-info .driver-name h5 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .tracking-step .call-icon,
+    .tracking-step .sms-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .tracking-step .contact-btns {
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .tracking-step .call-icon svg,
+    .tracking-step .sms-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .order-info {
+        padding: 16px;
+    }
+
+    .bg-light-text p {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .tracking-step .ratings p,
+    .store-ratings-with-name .ratings p,
+    .bg-light-text h6,
+    .store-and-otp .store-id h4,
+    .tracking-popup .store-ratings-with-name h4 {
+        font-size: 14px;
+    }
+
+    .order-tracking-list {
+        max-height: 650px;
+    }
+
+    .tracking-popup .about-store {
+        padding: 18px 16px 20px 16px;
+    }
+
+    .tracking-popup .store-name .store-logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+    }
+
+    .tracking-popup .pickup-type {
+        padding: 4px 8px;
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .tracking-popup .qr-verify {
+        padding: 20px 16px;
+    }
+
+    .tracking-popup .otp-numbers button {
+        font-size: 11px;
+        padding: 4px 5px;
+    }
+
+    .tracking-popup .qr-verify {
+        gap: 8px;
+    }
+
+    .tracking-popup .scheduled-date p,
+    .tracking-popup .order-main-date {
+        font-size: 12px;
+    }
+
+    .tracking-popup .otp-numbers input {
+        font-size: 13px;
+        width: 18px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .driver-tracking-model .modal-dialog {
+        max-width: 730px;
+    }
+
+    .driver-tracking-model .modal-header .popup-close-btn {
+        width: 40px;
+        height: 40px;
+        position: static;
+    }
+
+    .map-with-content,
+    .map-col,
+    .map-col iframe {
+        min-height: 500px;
+    }
+
+    .order-tracking-list {
+        max-height: 100%;
+        padding-bottom: 10px;
+        padding-right: 0 !important;
+        width: 100%;
+        overflow: visible;
+    }
+
+    .tracking-popup .modal-header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .driver-tracking-model .order-tracking-step {
+        padding-right: 18px;
+    }
+
+    .tracking-popup .modal-body {
+        max-height: calc(100vh - 210px);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .tracking-popup .modal-body::-webkit-scrollbar {
+        width: 3px;
+        border-radius: 32px;
+    }
+
+    .tracking-popup .modal-body::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .tracking-popup .modal-body::-webkit-scrollbar-thumb {
+        background-color: #9F9F9F;
+        border-radius: 32px;
+    }
+
+    .driver-tracking-model .order-tracking-title {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .driver-tracking-model .modal-dialog {
+        max-width: 536px;
+    }
+
+    .map-with-content,
+    .map-col,
+    .map-col iframe {
+        min-height: 350px;
+
+    }
+
+    .tracking-popup .order-full-info {
+        position: static;
+        padding-inline: 18px;
+        padding-top: 16px;
+    }
+
+    .driver-tracking-model .modal-content {
+        border-radius: 10px;
+    }
+
+    .driver-tracking-model .close-btn button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .tracking-step .call-icon,
+    .tracking-step .sms-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrival-distance,
+    .car-details {
+        padding-left: 8px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .driver-tracking-model .modal-dialog {
+        max-width: 100%;
+        margin-inline: 16px;
+    }
+
+    .tracking-popup .modal-header {
+        padding: 12px;
+    }
+
+    .tracking-popup .order-full-info {
+        padding-inline: 12px;
+        padding-top: 10px;
+    }
+
+    .tracking-popup .store-and-otp {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .tracking-popup .order-pickup-dates {
+        border-radius: 12px;
+        padding: 8px 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tracking-popup .store-id {
+        margin-bottom: 14px;
+    }
+
+    .tracking-popup .store-ratings-with-name h4 {
+        margin-bottom: 6px;
+    }
+
+    .driver-tracking-model .order-tracking-step {
+        padding: 16px 12px 0;
+    }
+
+    .driver-tracking-model .modal-header .popup-close-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .tracking-popup .scheduled-date {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .order-tracking-list .tracking-content h4 {
+        padding-right: 96px;
+        font-size: 14px;
+    }
+
+    .tracking-popup .otp-container p {
+        margin: 0 auto 20px;
+    }
+}
+
+
+
+/* Action Sheet */
+
+.action-sheet-modal .modal-header .btn-close {
+    box-shadow: unset;
+}
+.action-sheet-modal .modal-content {
+    border-radius: 24px 0 0 24px;
+}
+
+.action-sheet-modal .modal-body {
+    padding-inline: 24px;
+    padding-block: 0px;
+}
+
+.action-sheet-modal .modal-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+}
+
+.action-sheet-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    font-family: "Inter", serif;
+    margin-bottom: 24px;
+}
+
+.action-sheet-modal .order-details {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D0D5DD;
+    padding-bottom: 24px;
+}
+
+/* .action-sheet-modal  .estimated-delivery-info {
+    display: flex;
+    align-items: center;
+} */
+
+.action-sheet-modal .order-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #667085;
+    font-family: "Poppins", sans-serif;
+    border-right: 1px solid #D0D5DD;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.action-sheet-modal #order-date {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.action-sheet-modal .delivery-text,
+.action-sheet-modal #expected-delivery {
+    color: #12B76A;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.action-sheet-modal .progress-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 35px;
+    margin-block: 26px;
+    margin-inline: auto;
+}
+
+.action-sheet-modal .progress-container .step {
+    text-align: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+}
+
+.action-sheet-modal .progress-container .step-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #D0D5DD;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.action-sheet-modal .progress-container .step-circle.completed {
+    background-color: #12B76A;
+}
+
+.action-sheet-modal .progress-container .step-line {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 4px;
+    background-color: #D0D5DD;
+    width: 100%;
+    transform-origin: left;
+    z-index: 0;
+}
+
+.action-sheet-modal .progress-container .step-line-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #12B76A;
+    transition: width 0.5s ease-in-out;
+}
+
+.action-sheet-modal .progress-container .step-line-inner.completed {
+    width: 100%;
+}
+
+.action-sheet-modal .progress-container .step:first-child .step-line {
+    left: 50%;
+}
+
+.action-sheet-modal .progress-container .step:last-child .step-line {
+    width: 50%;
+}
+
+.action-sheet-modal .progress-container .step-label {
+    color: #D0D5DD;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+
+}
+
+.action-sheet-modal .progress-container .step-label.active {
+    color: #000;
+}
+
+.action-sheet-modal .progress-container .step-date {
+    color: #667085;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.action-sheet-modal .order-map iframe {
+    height: 350px;
+}
+
+.action-sheet-modal .tracking-info {
+    gap: 20px;
+}
+
+.action-sheet-modal .driver-detail,
+.action-sheet-modal .qr-wrapper {
+    flex: 1;
+}
+
+.action-sheet-modal .driver-detail {
+    background: #F2FCF8;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.action-sheet-modal .qr-wrapper {
+    background: #FAFBFB;
+}
+
+.action-sheet-modal .driver-detail .rating-wrapper {
+    gap: 6px;
+    align-items: center;
+}
+
+
+.action-sheet-modal .call-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #12B76A;
+    border-radius: 14px;
+    border: 2px solid #12B76A;
+    transition: all .3s ease-in-out;
+}
+
+.action-sheet-modal .sms-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #12B76A;
+    border-radius: 14px;
+    transition: all .3s ease-in-out;
+}
+
+.action-sheet-modal .call-icon svg,
+.action-sheet-modal .sms-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.action-sheet-modal .call-icon:hover {
+    background: transparent;
+}
+
+.action-sheet-modal .sms-icon:hover {
+    background: #12B76A;
+}
+
+.action-sheet-modal .call-icon:hover svg path {
+    stroke: #12B76A;
+}
+
+.action-sheet-modal .call-icon svg path,
+.action-sheet-modal .sms-icon svg path {
+    transition: all .3s ease-in-out;
+}
+
+.action-sheet-modal .sms-icon:hover svg path {
+    stroke: #ffffff;
+}
+
+.action-sheet-modal .driver-detail-header-left img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+.action-sheet-modal .driver-detail .driver-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.action-sheet-modal .driver-detail .rating-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #667085;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.action-sheet-modal .driver-detail-header {
+    border-bottom: 1px solid #D0D5DD;
+    padding-bottom: 20px;
+}
+
+.action-sheet-modal .driver-detail .car-info {
+    border: 1px solid #E6E6E6;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    margin-right: -8px;
+    margin-bottom: -8px;
+}
+
+.action-sheet-modal .driver-detail .car-info img {
+    width: 100%;
+    max-width: 160px;
+    display: block;
+}
+
+.action-sheet-modal .driver-detail .car-info .car-img-wrapper {
+    margin-bottom: 10px;
+}
+
+.action-sheet-modal .driver-detail .car-info h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.action-sheet-modal .driver-detail .car-info p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    color: #667085;
+    margin-bottom: 0px;
+}
+
+.action-sheet-modal .estimate-delivery {
+    padding-top: 20px;
+}
+
+.action-sheet-modal .estimate-info p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+    color: #667085;
+}
+
+.action-sheet-modal .estimate-info h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0px;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.action-sheet-modal .estimate-info {
+    height: inherit;
+}
+
+.action-sheet-modal .qr-wrapper {
+    background: #FAFBFB;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.action-sheet-modal .qr-wrapper .qr-info p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.action-sheet-modal .qr-wrapper .qr-img-wrapper img {
+    max-width: 138px;
+    object-fit: contain;
+    display: block;
+    margin-inline: auto;
+}
+
+.action-sheet-modal .qr-wrapper hr.custom-hr {
+    margin-block: 15px;
+    color: #D0D5DD;
+    opacity: 1;
+    margin-inline: -20px;
+}
+
+.action-sheet-modal .qr-wrapper .otp-wrapper p {
+    margin-bottom: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.action-sheet-modal .qr-wrapper .otp-fill-wrapper input {
+    background: #E5DFED;
+    border-radius: 4px;
+    color: #1F1724;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    border: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    text-align: center;
+}
+
+.action-sheet-modal .qr-wrapper .otp-fill-wrapper input[type=number]::-webkit-outer-spin-button,
+.action-sheet-modal .qr-wrapper .otp-fill-wrapper input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.action-sheet-modal .close-btn {
+    width: 100%;
+    background: #37AA4C;
+    border: 1px solid #37AA4C;
+    border-radius: 50px;
+    padding: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+    margin: 0px !important;
+}
+
+.action-sheet-modal .close-btn:hover {
+    background: transparent;
+    color: #37AA4C;
+}
+
+.action-sheet-modal .modal-footer {
+    padding: 24px;
+}
+
+.action-sheet-modal .modal-body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 32px;
+}
+
+.action-sheet-modal .modal-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.action-sheet-modal .modal-body::-webkit-scrollbar-thumb {
+    background-color: #9F9F9F;
+    border-radius: 32px;
+}
+
+
+
+@media screen and (max-width:1499px) {
+
+    .action-sheet-modal .call-icon,
+    .action-sheet-modal .sms-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .action-sheet-modal .close-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .action-sheet-modal .modal-title {
+        font-size: 20px;
+    }
+
+    .action-sheet-header h3 {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .action-sheet-modal .modal-title {
+        font-size: 18px;
+    }
+
+    .action-sheet-header h3 {
+        font-size: 16px;
+    }
+
+    .action-sheet-modal .order-text {
+        font-size: 13px;
+    }
+
+    .action-sheet-modal .call-icon,
+    .action-sheet-modal .sms-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .action-sheet-modal #order-date {
+        font-size: 15px;
+    }
+
+    .action-sheet-modal .progress-container .step-label {
+        top: -38px;
+        font-size: 12px;
+        line-height: 1.2;
+        max-width: 11ch;
+        width: 100%;
+        white-space: normal;
+
+    }
+
+    .action-sheet-modal .progress-container .step-date {
+        bottom: -36px;
+        font-size: 12px;
+        line-height: 1.2;
+        max-width: 9ch;
+        width: 100%;
+        white-space: normal;
+    }
+
+    .action-sheet-modal .delivery-text,
+    .action-sheet-modal #expected-delivery {
+        font-size: 15px;
+    }
+
+    .action-sheet-modal .progress-container {
+        padding-block: 40px;
+        margin-block: 20px;
+
+    }
+
+    .action-sheet-modal .driver-detail-header-left img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .action-sheet-modal .driver-detail .driver-name,
+    .action-sheet-modal .driver-detail .car-info h5 {
+        font-size: 18px;
+    }
+
+    .action-sheet-modal .driver-detail .car-info p {
+        font-size: 14px;
+    }
+
+    .action-sheet-modal .estimate-info p {
+        font-size: 15px;
+    }
+
+    .action-sheet-modal .estimate-info h6 {
+        font-size: 16px;
+    }
+
+    .action-sheet-modal .qr-wrapper .qr-img-wrapper img {
+        max-width: 120px;
+    }
+
+    .action-sheet-modal .qr-wrapper .otp-fill-wrapper input {
+        font-size: 16px;
+        width: 35px;
+        height: 35px;
+
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .action-sheet-modal .modal-dialog {
+        max-width: 90vw;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .action-sheet-modal .modal-body {
+        padding-inline: 16px;
+
+    }
+
+    .action-sheet-modal .call-icon,
+    .action-sheet-modal .sms-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .action-sheet-modal .qr-wrapper .qr-info p {
+        font-size: 12px;
+    }
+
+    .action-sheet-modal .close-btn button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .action-sheet-modal .otp-fill-wrapper {
+        max-width: 350px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .action-sheet-modal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .action-sheet-header h3 {
+        font-size: 15px;
+    }
+
+    .action-sheet-modal #order-date {
+        font-size: 15px;
+    }
+
+    .action-sheet-modal .delivery-text,
+    .action-sheet-modal #expected-delivery {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .action-sheet-modal #order-date {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .action-sheet-modal .order-text {
+        font-size: 12px;
+    }
+
+    .action-sheet-modal .modal-body {
+        padding-inline: 12px;
+        padding-block: 0px;
+    }
+
+    .action-sheet-modal .progress-container .step-circle {
+        width: 14px;
+        height: 14px;
+    }
+
+    .action-sheet-modal .progress-container .step-label {
+        top: -30px;
+        font-size: 8px;
+    }
+
+    .action-sheet-modal .progress-container .step-date {
+        bottom: -25px;
+        font-size: 7px;
+    }
+
+    .action-sheet-modal .progress-container .step-line {
+        top: 6px;
+        height: 3px;
+    }
+
+    .action-sheet-modal .order-map iframe {
+        height: 320px;
+    }
+
+    .action-sheet-modal .driver-detail {
+        border-radius: 16px;
+        padding: 14px;
+    }
+
+    .action-sheet-modal .driver-detail .driver-name,
+    .action-sheet-modal .driver-detail .car-info h5 {
+        font-size: 13px;
+    }
+
+    .action-sheet-modal .driver-detail .rating-text {
+        font-size: 14px;
+    }
+
+    .action-sheet-modal .estimate-info p {
+        font-size: 12px;
+    }
+
+    .action-sheet-modal .estimate-info h6 {
+        font-size: 14px;
+    }
+
+    .action-sheet-modal .driver-detail .car-info p {
+        font-size: 12px;
+    }
+
+    .action-sheet-modal .qr-wrapper .otp-wrapper p {
+        font-size: 14px;
+    }
+
+    .action-sheet-modal .qr-wrapper .otp-fill-wrapper input {
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .action-sheet-modal .modal-footer {
+        padding: 15px;
+    }
+}
