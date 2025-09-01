@@ -17,13 +17,13 @@
                     <h6 class="title">Weed Delivery Near You</h6>
                     <ul>
                         <li>
-                            <a href="miami-weed-delivery">Miami Weed Delivery</a>
+                            <a href="{{ route('miami.weed') }}">Miami Weed Delivery</a>
                         </li>
                         <li>
-                            <a href="chicago-weed-delivery">Chicago Weed Delivery</a>
+                            <a href="{{ route('chicago.weed') }}">Chicago Weed Delivery</a>
                         </li>
                         <li>
-                            <a href="detroit-weed-delivery">Detroit Weed Delivery</a>
+                            <a href="{{ route('detroit.weed') }}">Detroit Weed Delivery</a>
                         </li>
 
                     </ul>
