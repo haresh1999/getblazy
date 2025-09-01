@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ShoppingRequest;
 use App\Http\Requests\SubscribeRequest;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -49,7 +49,7 @@ class HomeController extends Controller
     {
         $input = $request->validated();
 
-        session('location',$input);
+        Session::put('location', $input);
 
         $queryString = '?' . http_build_query($input);
 
