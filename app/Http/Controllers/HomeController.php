@@ -49,7 +49,7 @@ class HomeController extends Controller
     {
         $input = $request->validated();
 
-        session($input);
+        session('location',$input);
 
         $queryString = '?' . http_build_query($input);
 
@@ -96,6 +96,6 @@ class HomeController extends Controller
 
         return redirect()
             ->back()
-            ->with('response.error', 'Thank you for subscribing! Our latest news and updates will be in your inbox shortly.');
+            ->with('response.success', 'Thank you for subscribing! Our latest news and updates will be in your inbox shortly.');
     }
 }
