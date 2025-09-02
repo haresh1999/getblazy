@@ -18,8 +18,40 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
+    # Block access to sensitive and development files
+    RedirectMatch 404 /\.env
+    RedirectMatch 404 /\.env\..*
+    RedirectMatch 404 /\.git
+    RedirectMatch 404 /\.gitignore
+    RedirectMatch 404 /\.gitattributes
+    RedirectMatch 404 /composer\.(json|lock)
+    RedirectMatch 404 /package\.(json|lock)
+    RedirectMatch 404 /phpunit\.xml
+    RedirectMatch 404 /phpcs\.xml
+    RedirectMatch 404 /phpmd\.xml
+    RedirectMatch 404 /phpstan\.neon
+    RedirectMatch 404 /server\.php
+    RedirectMatch 404 /artisan
+    RedirectMatch 404 /README(\.md)?
+    RedirectMatch 404 /CHANGELOG(\.md)?
+    RedirectMatch 404 /UPGRADE(\.md)?
+    RedirectMatch 404 /tests(/.*)?$
+    RedirectMatch 404 /storage/logs(/.*)?$
+    RedirectMatch 404 /storage/debugbar(/.*)?$
+    RedirectMatch 404 /node_modules(/.*)?$
+    RedirectMatch 404 /webpack\.mix\.js
+    RedirectMatch 404 /vite\.config\.js
+    RedirectMatch 404 /tsconfig\.json
+    RedirectMatch 404 /yarn\.lock
+    RedirectMatch 404 /pnpm\-lock\.yaml
+    RedirectMatch 404 /package-lock\.json
+    RedirectMatch 404 /error_log
+
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+# Disable directory listing
+Options -Indexes

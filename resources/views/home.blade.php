@@ -202,7 +202,7 @@
                             </picture>
                         </div>
                         <div class="brand-logo ">
-                            <img src="{{asset('assets/images/blazy-pay.png')}}" alt="Get Blazy brand mark" class="img-fluid">
+                        <img src="{{asset('assets/images/blazy-pay.png')}}" alt="Get Blazy brand mark" class="img-fluid">
                         </div>
                     </div>
                     <div class="blazy-pay-tool-top">

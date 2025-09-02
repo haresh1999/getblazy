@@ -24,7 +24,7 @@ class HomeController extends Controller
 
         $subTitle = 'Order premium flower, vapes, and edibles from trusted local retailers. Delivery in 90 minutes or less in active Miami zones.';
 
-        return view('miami_weed_delivery', compact('title', 'subTitle'));
+        return view('miami', compact('title', 'subTitle'));
     }
 
     public function detroit()
@@ -33,7 +33,7 @@ class HomeController extends Controller
 
         $subTitle = 'Order premium flower, vapes, and edibles from trusted local retailers. Delivery in 90 minutes or less in active Detroit zones.';
 
-        return view('detroit_weed_delivery', compact('title', 'subTitle'));
+        return view('detroit', compact('title', 'subTitle'));
     }
 
     public function chicago()
@@ -42,7 +42,7 @@ class HomeController extends Controller
 
         $subTitle = 'Order premium flower, vapes, and edibles from trusted local retailers. Delivery in 90 minutes or less in active Chicago zones.';
 
-        return view('chicago_weed_delivery', compact('title', 'subTitle'));
+        return view('chicago', compact('title', 'subTitle'));
     }
 
     public function shopping(ShoppingRequest $request)
@@ -55,7 +55,9 @@ class HomeController extends Controller
 
         $redirect_to = env('SHOPPING_URL') . $queryString;
 
-        return redirect()->to($redirect_to);
+        return redirect()->back();
+
+        // return redirect()->to($redirect_to);
     }
 
     public function subscribe(SubscribeRequest $request)
