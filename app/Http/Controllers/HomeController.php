@@ -55,9 +55,7 @@ class HomeController extends Controller
 
         $redirect_to = env('SHOPPING_URL') . $queryString;
 
-        return redirect()->back();
-
-        // return redirect()->to($redirect_to);
+        return redirect()->to($redirect_to);
     }
 
     public function subscribe(SubscribeRequest $request)
